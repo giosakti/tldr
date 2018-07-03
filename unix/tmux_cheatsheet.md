@@ -5,6 +5,7 @@ $ tmux new -s {name}
 $ tmux ls
 $ tmux attach -t {session_name}
 $ tmux kill-session -t {session_name}
+<C-b$>          rename session
 <C-bd>          detach
 
 ## Pane Management
@@ -16,8 +17,9 @@ $ tmux kill-session -t {session_name}
 <C-bz>          toggle current pane into fullscreen
 
 <C-b{{,}}>      cycle current pane
-<C-b>: resize-pane -{U,L,R,D} {amount}
+<C-b>:resize-pane -{U,L,R,D} {amount}
 
 ## Window Management
 <C-bc>          add a new window
 <C-b{num}>      switch between windows
+<C-b>:rename-window rename window
